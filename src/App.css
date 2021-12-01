@@ -698,10 +698,6 @@ footer h4 {
     .card {
         width: 30%;
     }
-
-    .about-content {
-        padding-left: 0;
-    }
 }
 
 @media screen and (max-width: 845px){
@@ -713,8 +709,13 @@ footer h4 {
         background-color: rgba( 255,255,255, 0.5)
     }
 
+    .hero {
+        background-position: right;
+    }
+
     .hero-text {
         width: 75%;
+        padding: 20px;
     }
 
     .recipe {
@@ -736,12 +737,18 @@ footer h4 {
         border-top-right-radius: 0;
     }
 
-    .error-page .container {
-        background-color: rgba(255,255,255,0.5);
+    .error-page, .about-page {
+        background: none;
     }
 
-    .error-content {
+    .error-content, .about-content {
         width: fit-content;
+        max-width: unset;
+        padding-top: 100px;
+    }
+
+    .about-page .container, .error-page .container {
+        justify-content: flex-start;
     }
     
 }
@@ -844,6 +851,7 @@ footer h4 {
     .about-content {
         width: 100%;
         padding: 60px 50px;
+        padding-top: 100px;
     }
 
     .about-content h2 {
