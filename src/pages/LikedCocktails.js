@@ -56,7 +56,7 @@ const LikedCocktails = () => {
 
     return (
         <section className='page-container liked-cocktails'>
-            <h2> <FaHeart /> You added {favorites.length} cocktails to your list</h2>
+            <h2> <FaHeart /> You added {favorites.length} cocktail{favorites.length > 1 && 's'} to your list</h2>
             <div className='list' >
                 {loading ? 
                     <Loading />

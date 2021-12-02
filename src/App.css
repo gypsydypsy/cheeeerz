@@ -711,6 +711,7 @@ footer h4 {
 
     .hero {
         background-position: right;
+        margin-bottom: -65px;
     }
 
     .hero-text {
